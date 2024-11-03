@@ -45,6 +45,6 @@ story1_2_layout = html.Div([
             ], className='story-desc-wrapper animate__animated animate__rotateIn')  
         ], className='story-wrapper'),
         html.Div([
-            dcc.Link('>>', href='/story2', className='story-next-btn change-color-hover')
+            dcc.Link('>>', href='/story2_1', className='story-next-btn change-color-hover')
         ], className='next-btn-container')
     ])
