@@ -45,6 +45,7 @@ story3_1_layout = html.Div([
             ], className='insight-group')
         ], className='story-wrapper-row'),
         html.Div([
+            dcc.Link('<<', href='/story2_1', className='story-next-btn change-color-hover'),
             dcc.Link('>>', href='/story3_2', className='story-next-btn change-color-hover')
         ], className='next-btn-container')
     ])
