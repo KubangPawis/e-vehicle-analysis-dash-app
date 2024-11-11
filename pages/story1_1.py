@@ -45,7 +45,7 @@ story1_1_layout = html.Div([
                     ], className='insight-container animate__animated animate__jackInTheBox')
                 ], className='story-desc-wrapper scale_animation')
             ], className='insight-group')
-        ], className='story-wrapper'),
+        ], className='story-wrapper-row'),
         html.Div([
             dcc.Link('>>', href='/story1_2', className='story-next-btn change-color-hover')
         ], className='next-btn-container')

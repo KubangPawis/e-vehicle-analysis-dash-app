@@ -32,11 +32,19 @@ body {
   gap: 4rem;
 }
 
-.story-wrapper {
+.story-wrapper-row {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   gap: 5rem;
+}
+
+.story-wrapper-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
 }
 
 .story-desc-wrapper {
@@ -62,6 +70,14 @@ body {
   margin-inline: 4rem;
 }
 
+.title-div--story {
+  font-family: "Press Start 2P";
+  font-size: 1.5rem;
+  margin-inline: 4rem;
+  max-width: 70%;
+  text-align: center;
+}
+
 .home-title-div {
   width: 60%;
   text-align: center;
@@ -73,6 +89,9 @@ body {
   text-align: center;
 }
 .graph-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-right: 7rem;
 }
 
