@@ -37,7 +37,7 @@ story2_1_layout = html.Div([
             ], className='graph-wrapper'),
         ], className='story-wrapper'),
         html.Div([
-            dcc.Link('>>', href='/story2', className='story-next-btn change-color-hover')
+            dcc.Link('>>', href='/story3_1', className='story-next-btn change-color-hover')
         ], className='next-btn-container')
     ])
 

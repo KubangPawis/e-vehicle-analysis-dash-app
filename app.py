@@ -3,6 +3,7 @@ from pages.home import home_layout
 from pages.story1_1 import story1_1_layout
 from pages.story1_2 import story1_2_layout
 from pages.story2_1 import story2_1_layout, app_2_1_callback
+from pages.story3_1 import story3_1_layout
 import plotly.express as px
 import pandas as pd
 import json
@@ -198,6 +199,8 @@ def display_page(pathname):
         return story1_2_layout
     if pathname == '/story2_1':
         return story2_1_layout
+    if pathname == '/story3_1':
+        return story3_1_layout
     else:
         return html.Div('404: Page Not Found')
 
