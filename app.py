@@ -11,7 +11,6 @@ from pages.story4_1 import story4_1_layout
 from pages.story4_2 import story4_2_layout
 from pages.story5_1 import story5_1_layout
 from pages.story5_2 import story5_2_layout
-import plotly.express as px
 import pandas as pd
 import json
 
