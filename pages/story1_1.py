@@ -21,8 +21,8 @@ vis1.update_layout(
     font=dict(
         color='white'
     ),
-    width=1700,
-    height=1000,
+    width=1500,
+    height=900,
     barmode='stack', 
     title=None, 
     xaxis_title='Manufacturer', 
@@ -40,9 +40,11 @@ story1_1_layout = html.Div([
             ]),
             html.Div([
                 html.Div([
-                    html.H1('Tesla serves as the number one manufacturer of electric vehicles, constituting approximately 44% of E-Vehicles Bought in the United States.')
-                ], className='insight-container')
-            ], className='story-desc-wrapper animate__animated animate__jackInTheBox')  
+                    html.Div([
+                        html.H1('Tesla serves as the number one manufacturer of electric vehicles, constituting approximately 44% of E-Vehicles Bought in the United States.')
+                    ], className='insight-container animate__animated animate__jackInTheBox')
+                ], className='story-desc-wrapper scale_animation')
+            ], className='insight-group')
         ], className='story-wrapper'),
         html.Div([
             dcc.Link('>>', href='/story1_2', className='story-next-btn change-color-hover')

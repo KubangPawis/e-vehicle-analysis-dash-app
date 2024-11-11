@@ -21,8 +21,8 @@ vis1.update_layout(
     font=dict(
         color='white'
     ),
-    width=1700,
-    height=1000,
+    width=1500,
+    height=900,
     barmode='stack', 
     title=None, 
     xaxis_title='Manufacturer', 
@@ -40,9 +40,11 @@ story1_2_layout = html.Div([
             ]),
             html.Div([
                 html.Div([
-                    html.H1('BEVs are the most commonly produced and demanded type of E-Vehicles in the US.')
-                ], className='insight-container')
-            ], className='story-desc-wrapper animate__animated animate__rotateIn')  
+                    html.Div([
+                        html.H1('BEVs are the most commonly produced and demanded type of E-Vehicles in the US.')
+                    ], className='insight-container animate__animated animate__rotateIn')
+                ], className='story-desc-wrapper scale_animation')  
+            ], className='insight-group')
         ], className='story-wrapper'),
         html.Div([
             dcc.Link('>>', href='/story2_1', className='story-next-btn change-color-hover')

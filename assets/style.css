@@ -74,6 +74,7 @@ body {
 }
 
 .insight-group {
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -82,7 +83,7 @@ body {
 }
 
 .insight-container {
-  max-width: 80%;
+  width: 100%;
   background-color: #1c1442;
   padding: 1rem 1.5rem;
 }
@@ -95,4 +96,16 @@ body {
 
 .change-color-hover:hover {
   background-color: #483e78;
+}
+
+.scale_animation {
+  transform: scale(1);
+  transition: transform 0.3s ease;
+  transform-origin: center;
+}
+.scale_animation:hover {
+  transform: scale(1.1);
+}
+.animate__jackInTheBox {
+  animation-fill-mode: forwards;
 }
