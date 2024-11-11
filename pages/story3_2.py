@@ -30,7 +30,7 @@ vis3_1.update_layout(
 vis3_1.update_xaxes(minor=dict(ticks='inside', showgrid=False), rangeslider_visible=False)
 vis3_1.add_vline(x=2017, line_width=2, line_dash='dash', line_color='red')
 
-story3_1_layout = html.Div([
+story3_2_layout = html.Div([
         html.Div([
             html.Div([
                 html.H1('Trends in Number of Electric Vehicles Produced by Top 5 Manufacturers (1997-2024)', className='title-div'),
@@ -39,12 +39,12 @@ story3_1_layout = html.Div([
             html.Div([
                 html.Div([
                     html.Div([
-                        html.H1('By 2017, Tesla surpassed all other E-Vehicle manufacturers in terms of demand.')
+                        html.H1('E-Vehicle Production did not go lower upon the upset of COVID-19.')
                     ], className='insight-container animate__animated animate__jackInTheBox')
                 ], className='story-desc-wrapper scale_animation')
             ], className='insight-group')
         ], className='story-wrapper'),
         html.Div([
-            dcc.Link('>>', href='/story3_2', className='story-next-btn change-color-hover')
+            dcc.Link('>>', href='/story4_1', className='story-next-btn change-color-hover')
         ], className='next-btn-container')
     ])
