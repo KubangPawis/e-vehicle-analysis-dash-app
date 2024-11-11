@@ -31,10 +31,13 @@ story2_1_layout = html.Div([
                 ], className='story-desc-wrapper scale_animation'),
             ], className='insight-group'),
             html.Div([
-                html.H1('E-Vehicle Prevalence over US Counties based on Manufacturer', className='title-div'),
-                dcc.Loading(
-                children=[dcc.Graph(id='story2_1')])
-            ], className='graph-wrapper'),
+                html.Div([
+                    html.H1('E-Vehicle Prevalence over US Counties based on Manufacturer', className='title-div')
+                ], className='title-div'),
+                html.Div([
+                    dcc.Loading(children=[dcc.Graph(id='story2_1')])
+                ], className='graph-wrapper')
+            ]),
         ], className='story-wrapper-row'),
         html.Div([
             dcc.Link('>>', href='/story3_1', className='story-next-btn change-color-hover')
