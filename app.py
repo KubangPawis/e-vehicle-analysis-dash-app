@@ -8,6 +8,7 @@ from pages.story3_2 import story3_2_layout
 from pages.story4_1 import story4_1_layout
 from pages.story4_2 import story4_2_layout
 from pages.story5_1 import story5_1_layout
+from pages.story5_2 import story5_2_layout
 import plotly.express as px
 import pandas as pd
 import json
@@ -213,6 +214,8 @@ def display_page(pathname):
         return story4_2_layout
     if pathname == '/story5_1':
         return story5_1_layout
+    if pathname == '/story5_2':
+        return story5_2_layout
     else:
         return html.Div('404: Page Not Found')
 
