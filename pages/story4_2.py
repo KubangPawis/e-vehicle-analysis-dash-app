@@ -29,7 +29,7 @@ vis4.update_layout(
     yaxis_gridcolor='LightGray'
     )
 
-story4_1_layout = html.Div([
+story4_2_layout = html.Div([
         html.Div([
             html.Div([
                 html.H1('Difference between Tesla E-Vehicle Model Demand Distributions of 2017 and 2018'),
@@ -40,12 +40,12 @@ story4_1_layout = html.Div([
             html.Div([
                 html.Div([
                     html.Div([
-                        html.H1('The production and demand of Tesla\'s MODEL 3 overtook the E-vehicle market in 2018.')
+                        html.H1('There must have been new features or better pricing values to Tesla\'s MODEL 3 in 2018.')
                     ], className='insight-container animate__animated animate__jackInTheBox')
                 ], className='story-desc-wrapper scale_animation')
             ], className='insight-group')
         ], className='story-wrapper-col'),
         html.Div([
-            dcc.Link('>>', href='/story4_2', className='story-next-btn change-color-hover')
+            dcc.Link('>>', href='/story5_1', className='story-next-btn change-color-hover')
         ], className='next-btn-container')
     ])
