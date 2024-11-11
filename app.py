@@ -6,6 +6,7 @@ from pages.story1_2 import story1_2_layout
 from pages.story2_1 import story2_1_layout, app_2_1_callback
 from pages.story3_1 import story3_1_layout
 from pages.story3_2 import story3_2_layout
+from pages.story3_3 import story3_3_layout
 from pages.story4_1 import story4_1_layout
 from pages.story4_2 import story4_2_layout
 from pages.story5_1 import story5_1_layout
@@ -209,6 +210,8 @@ def display_page(pathname):
         return story3_1_layout
     if pathname == '/story3_2':
         return story3_2_layout
+    if pathname == '/story3_3':
+        return story3_3_layout
     if pathname == '/story4_1':
         return story4_1_layout
     if pathname == '/story4_2':
