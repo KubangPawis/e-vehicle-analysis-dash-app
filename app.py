@@ -1,5 +1,6 @@
 from dash import Dash, html, dcc, Input, Output
 from pages.home import home_layout
+from pages.end import end_layout
 from pages.story1_1 import story1_1_layout
 from pages.story1_2 import story1_2_layout
 from pages.story2_1 import story2_1_layout, app_2_1_callback
@@ -216,6 +217,8 @@ def display_page(pathname):
         return story5_1_layout
     if pathname == '/story5_2':
         return story5_2_layout
+    if pathname == '/end':
+        return end_layout
     else:
         return html.Div('404: Page Not Found')
 
