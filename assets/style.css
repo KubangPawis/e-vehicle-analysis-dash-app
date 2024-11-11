@@ -44,7 +44,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  max-width: 50%;
+  max-width: 70%;
 }
 
 .story-next-btn {
@@ -71,6 +71,9 @@ body {
 .home-subtitle-div {
   width: 40%;
   text-align: center;
+}
+.graph-wrapper {
+  margin-right: 7rem;
 }
 
 .insight-group {

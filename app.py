@@ -2,14 +2,18 @@ from dash import Dash, html, dcc, Input, Output
 from pages.home import home_layout
 from pages.story1_1 import story1_1_layout
 from pages.story1_2 import story1_2_layout
-from pages.story2_1 import story2_1_layout
+from pages.story2_1 import story2_1_layout, app_2_1_callback
 import plotly.express as px
 import pandas as pd
 import json
 
 df = pd.read_csv('./data/electric_vehicle_pop_clean.csv')
+app = Dash(external_stylesheets=['https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css'], suppress_callback_exceptions=True)
 
-app = Dash(external_stylesheets=['https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css'])
+with open('./assets/us_county_geo.json') as f:
+    geojson = json.load(f)
+
+app_2_1_callback(app)
 
 '''
 STACKED BAR PLOT
@@ -179,10 +183,10 @@ vis5.update_xaxes(minor=dict(ticks='inside', showgrid=True))
 
 
 app.layout = html.Div([
+        dcc.Store(id='geojson_us', data=geojson),
         dcc.Location(id='url', refresh=False),
         html.Div(id='page-content')
     ])
-
 @app.callback(Output('page-content', 'children'),
               Input('url', 'pathname'))
 def display_page(pathname):
