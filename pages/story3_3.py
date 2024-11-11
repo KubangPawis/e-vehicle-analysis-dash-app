@@ -37,7 +37,7 @@ story3_3_layout = html.Div([
                 html.Div([
                     html.Div([
                         html.H1('Starting 2018, BEVs have become more in demand than PHEVs.')
-                    ], className='insight-container animate__animated animate__jackInTheBox')
+                    ], className='insight-container animate__animated animate__backInRight')
                 ], className='story-desc-wrapper scale_animation')
             ], className='insight-group')
         ], className='story-wrapper-row'),

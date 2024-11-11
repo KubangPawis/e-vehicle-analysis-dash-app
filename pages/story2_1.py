@@ -17,17 +17,17 @@ story2_1_layout = html.Div([
                 html.Div([
                     html.Div([
                         html.H1('Tesla E-Vehicles are most prevalent in the Washington and Californian regions, but are generally found in many other parts of the US')
-                    ], className='insight-container animate__animated animate__rotateIn')
+                    ], className='insight-container animate__animated animate__backInLeft')
                 ], className='story-desc-wrapper scale_animation'),
                 html.Div([
                     html.Div([
                         html.H1('Tesla owners in Floridian counties constitute about 90% of the E-Vehicle population in the said state')
-                    ], className='insight-container animate__animated animate__rotateIn')
+                    ], className='insight-container animate__animated animate__backInLeft')
                 ], className='story-desc-wrapper scale_animation'),
                 html.Div([
                     html.Div([
                         html.H1('Chevrolet E-Vehicle owners come second to Tesla in terms of pre    valence, but are more dispersed than densely grouped throughout the US.')
-                    ], className='insight-container animate__animated animate__rotateIn')
+                    ], className='insight-container animate__animated animate__backInLeft')
                 ], className='story-desc-wrapper scale_animation'),
             ], className='insight-group'),
             html.Div([

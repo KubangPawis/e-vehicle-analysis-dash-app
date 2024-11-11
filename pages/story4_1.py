@@ -41,7 +41,7 @@ story4_1_layout = html.Div([
                 html.Div([
                     html.Div([
                         html.H1('The production and demand of Tesla\'s MODEL 3 overtook the E-vehicle market in 2018.')
-                    ], className='insight-container animate__animated animate__jackInTheBox')
+                    ], className='insight-container animate__animated animate__fadeInLeftBig')
                 ], className='story-desc-wrapper scale_animation')
             ], className='insight-group')
         ], className='story-wrapper-col'),

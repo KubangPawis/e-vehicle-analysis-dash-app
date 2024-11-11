@@ -40,7 +40,7 @@ story3_2_layout = html.Div([
                 html.Div([
                     html.Div([
                         html.H1('E-Vehicle Production did not go lower upon the upset of COVID-19.')
-                    ], className='insight-container animate__animated animate__jackInTheBox')
+                    ], className='insight-container animate__animated animate__zoomInDown')
                 ], className='story-desc-wrapper scale_animation')
             ], className='insight-group')
         ], className='story-wrapper-row'),

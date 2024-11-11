@@ -35,7 +35,7 @@ story5_1_layout = html.Div([
                 html.Div([
                     html.Div([
                         html.H1('Unlike PHEVs, BEV performance (electric range) increases along with the price.')
-                    ], className='insight-container animate__animated animate__jackInTheBox')
+                    ], className='insight-container animate__animated animate__fadeInLeftBig')
                 ], className='story-desc-wrapper scale_animation')
             ], className='insight-group'),
             html.Div([

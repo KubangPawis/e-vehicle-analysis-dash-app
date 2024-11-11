@@ -40,7 +40,7 @@ story3_1_layout = html.Div([
                 html.Div([
                     html.Div([
                         html.H1('By 2017, Tesla surpassed all other E-Vehicle manufacturers in terms of demand.')
-                    ], className='insight-container animate__animated animate__jackInTheBox')
+                    ], className='insight-container animate__animated animate__backInDown')
                 ], className='story-desc-wrapper scale_animation')
             ], className='insight-group')
         ], className='story-wrapper-row'),
